@@ -1,53 +1,27 @@
-# Mordad Connect
+# Mordad Connect v1.0
 
-**Mordad Connect** یک ابزار ویندوزی برای کافی‌نت‌ها و گیم‌نت‌هاست  
-که مشکل قطعی، کندی و خطای اتصال سایت‌ها و بازی‌ها را  
-با انتخاب و اعمال DNS مناسب حل می‌کند.
+Mordad Connect is a simple, reliable and lightweight DNS management tool
+designed for Cafenets, Gamenets and office environments.
 
----
+## Features
+- Cafe Net Mode
+- Game Net Mode
+- One-click DNS apply
+- Clean and professional interface
+- No technical knowledge required
 
-## سازنده
-**Reza Bazzi**  
-Gorgan – Iran
-
----
-
-## کاربرد اصلی
-- کافی‌نت‌ها (Cafe Net Mode)
-- گیم‌نت‌ها (Game Net Mode)
-
----
-
-## سیستم‌عامل‌های پشتیبانی‌شده
-
-### Cafe Net Mode
+## System Requirements
 - Windows XP / Vista / 7 / 8 / 10 / 11
-- X86 / X64
+- 32-bit & 64-bit supported
+- Administrator access required for DNS changes
 
-### Game Net Mode
-- Windows 10 / 11
-- فقط 64bit
+## Usage
+1. Download the file
+2. Run as Administrator
+3. Select desired mode
+4. Apply DNS
 
----
-
-## قابلیت‌ها (نسخه اولیه)
-- تست DNS فعال
-- نمایش Ping
-- تغییر DNS ویندوز
-- اجرای خودکار Flush DNS
-- ذخیره DNS موفق برای هر سایت
-- رابط ساده و بدون پیچیدگی
-
----
-
-## نصب
-پس از دانلود فایل نصب:
-1. اجرای فایل `.exe`
-2. پذیرش قوانین
-3. انتخاب مسیر نصب
-4. ایجاد آیکن روی دسکتاپ (اختیاری)
-5. اجرای برنامه پس از نصب
-
----
-
-## مسیر پیش‌فرض نصب
+## Creator
+Created by Mordad Cafenet  
+Reza Bazzi  
+Gorgan – Iran
