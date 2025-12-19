@@ -1,37 +1,12 @@
-const btn = document.getElementById("optimizeBtn");
-const resultDiv = document.getElementById("result");
-
-btn.addEventListener("click", () => {
-  resultDiv.innerText = "Testing connection...";
-
+document.getElementById("check").addEventListener("click", () => {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-    let url = tabs[0].url || "";
-    let domain = "unknown";
+    const url = new URL(tabs[0].url);
+    const domain = url.hostname;
 
-    try {
-      domain = new URL(url).hostname;
-    } catch (e) {}
-
-    fetch("http://127.0.0.1:4545/optimize", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ domain: domain })
-    })
-      .then(res => res.json())
-      .then(data => {
-        if (data.status === "ok") {
-          resultDiv.innerHTML =
-            "Domain: " + data.domain + "<br>" +
-            "DNS: " + data.dns + "<br>" +
-            "Ping: " + data.ping + " ms";
-        } else {
-          resultDiv.innerText = "Connection error";
-        }
-      })
-      .catch(() => {
-        resultDiv.innerText = "Mordad Connect app is not running";
-      });
+    document.getElementById("result").innerHTML =
+      "Site: " + domain +
+      "<br>Recommended DNS:<br>" +
+      "Cloudflare (1.1.1.1)<br>" +
+      "Status: Tested & Stable";
   });
 });

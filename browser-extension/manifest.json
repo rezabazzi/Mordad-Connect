@@ -1,12 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Mordad Connect",
-  "version": "0.4",
-  "description": "Cafe Net Mode - Find the working better DNS",
+  "name": "Mordad Connect – Cafe Net Mode",
+  "version": "1.2",
+  "description": "Official Cafe Net browser extension for Mordad Connect.",
+  "permissions": ["tabs"],
   "action": {
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "activeTab"
-  ]
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
 }
